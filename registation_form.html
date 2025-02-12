@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link 
+    rel="shortcut icon"
+    href="https://image.shutterstock.com/image-vector/sign-page-on-smartphone-screen-260nw-323712296.jpg"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        body{
+            background-color: rgb(148, 126, 135);
+        }
+        
+        form{
+            margin: 0px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            padding: 30px;
+            background-color:rgb(220, 189, 194);
+            border-radius: 8px;
+            box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1);
+        }
+
+        .inputs_container{
+            margin-bottom: 20px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            font-size: medium;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 10px;
+            top: 58%;
+            transform: translateY(-50%);
+            color: black;
+            cursor: pointer;
+        }
+
+        .button2_container{
+            position: relative;
+        }
+
+        .button2_container i{
+            position: absolute;
+            left: 29%;
+            top: 41%;
+            transform: translateY(-50%);
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 450px;
+            height: 50px;
+            padding-left: 30px;
+            border: 1px solid #aaa8a8;
+            border-radius: 5px;
+        }
+
+        button[type="Sign In"] {
+            width: 450px;
+            height: 50px;
+            background-color:rgb(216, 94, 114);
+            margin-bottom: 10px;
+            border: 1px solid #aaa8a8;
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        button[type="Sign In"]:hover{background-color: rgb(215, 47, 75);}
+        
+        button[type="Sign in with Google"]{
+            width: 450px;
+            height: 50px;
+            background-color:white;
+            margin-bottom: 10px;
+            border: 1px solid #aaa8a8;
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        button[type="Sign in with Google"]:hover{background-color: rgb(125, 121, 121);}
+
+        p {
+            text-align: center;
+        }
+
+        pre {
+            text-align: center;
+            font-size: large;
+        }
+
+        pre a {
+            text-decoration: none;
+            color: rgb(255, 0, 102);
+        }
+        ::placeholder{
+            font-size: medium;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Welcome Back</h1><br><br>
+        <div class="inputs_container">
+            <div class="input-wrapper">
+                <label>Email</label><br><br>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" name="Email" required placeholder="Enter your email"><br><br>
+            </div>
+            <div class="input-wrapper">
+                <label>Password</label><br><br>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="Password" required placeholder="Enter your password"><br><br>
+            </div>
+        </div>
+        <div class="button1_container">
+            <button type="Sign In">Sign In</button>
+        </div>
+        <br><br>
+        <p>________ Or continue with ________</p>
+        <br><br>
+        <div class="button2_container">
+            <i class="fa-brands fa-google"></i>
+            <button type="Sign in with Google">Sign in with Google</button>
+        </div>
+        <br><br>
+        <pre>Don't have an account?  <a href="#">Sign up</a></pre>
+    </form>
+</body>
+</html>
