@@ -34,6 +34,8 @@
             background-color:rgb(220, 189, 194);
             border-radius: 8px;
             box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
         }
 
         .inputs_container{
@@ -68,7 +70,7 @@
         }
 
         input[type="text"], input[type="password"] {
-            width: 450px;
+            width: 100%;
             height: 50px;
             padding-left: 30px;
             border: 1px solid #aaa8a8;
@@ -76,7 +78,7 @@
         }
 
         button[type="Sign In"] {
-            width: 450px;
+            width: 100%;
             height: 50px;
             background-color:rgb(216, 94, 114);
             margin-bottom: 10px;
@@ -88,7 +90,7 @@
         button[type="Sign In"]:hover{background-color: rgb(215, 47, 75);}
         
         button[type="Sign in with Google"]{
-            width: 450px;
+            width: 100%;
             height: 50px;
             background-color:white;
             margin-bottom: 10px;
@@ -114,6 +116,19 @@
         }
         ::placeholder{
             font-size: medium;
+        }
+
+        @media (max-width: 600px) {
+            input[type="text"], input[type="password"], button[type="Sign In"], button[type="Sign in with Google"] {
+                height: 40px;
+                font-size: small;
+            }
+
+            .button2_container i {
+                left: 25%;
+                top: 38%;
+                font-size: small;
+            }
         }
 
     </style>
